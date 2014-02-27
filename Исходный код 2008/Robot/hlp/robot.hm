@@ -1,0 +1,59 @@
+ 
+// Commands (ID_* and IDM_*) 
+HID_ANLS_DYN_SPEED                      0x10096
+HID_ANLS_DER_MATRICES                   0x10098
+HID_ADD_LINK                            0x18003
+HID_VIEW_MODES_2D                       0x18004
+HID_VIEW_MODES_3D                       0x18005
+HID_EDIT_DEL                            0x18006
+HID_EDIT_PROPS                          0x18007
+HID_EDIT_ADD                            0x1800B
+HID_MAST_LESS                           0x1800C
+HID_MAST_MORE                           0x1800D
+HID_MAST_NORM                           0x1800E
+HID_VIEW_CENTER                         0x1800F
+HID_EDIT_FORMULA                        0x18010
+HID_ANLS_PARAMS                         0x18013
+HID_ANLS_OPTIONS                        0x18015
+HID_ANLS_MATRICES                       0x18016
+HID_ANLS_KIN_DIR                        0x18017
+HID_ANLS_KIN_REV                        0x18018
+HID_VIEW_REFRESH                        0x18019
+HID_EDIT_SELECT                         0x1801A
+HID_CTRL_MOVE_DEFAULT                   0x1801B
+HID_CTRL_FORV                           0x1801C
+HID_CTRL_BACK                           0x1801D
+HID_EDIT_NEXT                           0x1801E
+HID_EDIT_PREV                           0x1801F
+HID_ANLS_AXIS                           0x18020
+ 
+// Prompts (IDP_*) 
+ 
+// Resources (IDR_*) 
+HIDR_MAINFRAME                          0x20080
+HIDR_ROBOTTYPE                          0x20081
+HIDR_CONSTRUCT                          0x20085
+ 
+// Dialogs (IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_SEL_LINK_DLG                       0x20082
+HIDD_EDIT_LINK_DLG                      0x2008A
+HIDD_FORMULA_DLG                        0x2008B
+HIDD_PARAMS_DLG                         0x2008C
+HIDD_OPT_DLG                            0x2008D
+HIDD_MATR_DLG                           0x2008E
+HIDD_KINDIR_DLG                         0x2008F
+HIDD_FLYEDIT_DLG                        0x20090
+HIDD_SELECT_DLG                         0x20092
+HIDD_KINREV_DLG                         0x20093
+HIDD_EDITGIVEN_DLG                      0x20094
+HIDD_EDITVARS_DLG                       0x20095
+HIDD_DYN_SPEED_DLG                      0x20097
+HIDD_DERIV_MATR_DLG                     0x20098
+HIDD_DYNDIR_DLG                         0x20099
+HIDD_POS_DLG                            0x2009A
+HIDD_VALUE_DLG                          0x2009B
+HIDD_EDIT_POS_DLG                       0x2009C
+HIDD_REV_DLG                            0x2009D
+ 
+// Frame Controls (IDW_*) 

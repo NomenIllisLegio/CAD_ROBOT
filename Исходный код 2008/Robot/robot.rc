@@ -1,0 +1,1247 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// нейтральный resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 130, 173
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Про САПР ""Робот"""
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,78,156,50,14,WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,6,6,120,144
+    ICON            IDI_ML5,IDC_STATIC,18,18,21,20,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    ICON            IDI_RL5,IDC_STATIC,54,18,21,20,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    ICON            IDI_GRIPE1,IDC_STATIC,90,18,21,20,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    CTEXT           "САПР ""Робот""",IDC_STATIC,18,48,96,12,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Молчанов В.",IDC_STATIC,18,66,96,8,SS_CENTERIMAGE
+    CTEXT           "Калугин С.",IDC_STATIC,18,78,96,8,SS_CENTERIMAGE
+    CTEXT           "Кадышев А.",IDC_STATIC,18,90,96,8,SS_CENTERIMAGE
+    LTEXT           "руководитель:",IDC_STATIC,18,102,96,8,SS_CENTERIMAGE
+    CTEXT           "Пономаренко С.С.",IDC_STATIC,18,114,96,8,SS_CENTERIMAGE
+    RTEXT           "(с) 2004. All rights reserved",IDC_STATIC,18,138,96,8,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 123
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 166
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // нейтральный resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// русский resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SEL_LINK_DLG DIALOGEX 0, 0, 167, 118
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Элементы манипуляционного робота"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LINKLIST,"SysListView32",LVS_SINGLESEL | LVS_SHAREIMAGELISTS | WS_BORDER | WS_TABSTOP,7,5,155,90,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "Добавить",IDOK,55,100,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,110,100,50,14
+END
+
+IDD_EDIT_LINK_DLG DIALOGEX 0, 0, 242, 241
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Свойства элемента"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,78,222,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,186,222,50,14
+    GROUPBOX        "Элемент",IDC_STATIC,5,5,230,40,BS_FLAT
+    ICON            IDI_ML5,IDC_LINK_ICON,10,15,20,20,0,WS_EX_DLGMODALFRAME
+    CTEXT           "Static",IDC_LINK_TYPE,40,15,110,10,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_LINK_NAME,40,25,190,14,ES_AUTOHSCROLL
+    GROUPBOX        "Ориентация по осям",IDC_STATIC,5,45,230,40,BS_FLAT
+    CONTROL         "Ось X",IDC_AXIS_X,"Button",BS_AUTORADIOBUTTON,82,55,36,10
+    CONTROL         "Ось Y",IDC_AXIS_Y,"Button",BS_AUTORADIOBUTTON,136,55,36,10
+    CONTROL         "Ось Z",IDC_AXIS_Z,"Button",BS_AUTORADIOBUTTON,192,55,36,10
+    CONTROL         "Другая ...",IDC_AXIS_CUSTOM,"Button",BS_AUTORADIOBUTTON,15,65,49,10
+    EDITTEXT        IDC_AXIS_X_EDIT,80,65,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AXIS_Y_EDIT,135,65,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AXIS_Z_EDIT,190,65,40,12,ES_AUTOHSCROLL
+    GROUPBOX        "Геометрия звена",IDC_STATIC,5,85,230,47,BS_FLAT
+    EDITTEXT        IDC_LINK_X,80,95,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LINK_Y,135,95,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LINK_Z,190,95,40,12,ES_AUTOHSCROLL
+    LTEXT           "X:",IDC_STATIC,70,95,8,15,SS_CENTERIMAGE
+    LTEXT           "Y:",IDC_STATIC,125,95,8,15,SS_CENTERIMAGE
+    LTEXT           "Z:",IDC_STATIC,180,95,8,15,SS_CENTERIMAGE
+    PUSHBUTTON      "Авто...",IDC_LINK_AUTO,10,95,55,15
+    CTEXT           "Static",IDC_LINK_INDEX,160,15,70,10,SS_CENTERIMAGE | SS_SUNKEN
+    PUSHBUTTON      "Применить",IDC_APPLY,132,222,50,14
+    PUSHBUTTON      "Предыдущее",IDC_PREV,186,144,50,14
+    PUSHBUTTON      "Следующее",IDC_NEXT,186,162,50,14
+    GROUPBOX        "Кинематическая пара",IDC_STATIC,6,138,175,78,BS_FLAT
+    CTEXT           "Параметр",IDC_STATIC,11,149,75,10,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Минимум",IDC_STATIC,91,149,40,10,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Максимум",IDC_STATIC,136,149,40,10,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_M_MIN,91,163,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_M_MAX,136,163,40,12,ES_AUTOHSCROLL
+    CTEXT           "",IDC_M_LAB,11,162,75,12,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "",IDC_SPEED_LAB,11,179,75,13,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_S_MIN,90,179,41,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_S_MAX,136,179,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LENGTH,42,114,42,12,ES_AUTOHSCROLL
+    CTEXT           "Длинна",IDC_STATIC,12,114,30,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_RADIUS,114,114,42,12,ES_AUTOHSCROLL
+    CTEXT           "Радиус",IDC_STATIC,84,114,30,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_MASS,186,114,42,12,ES_AUTOHSCROLL
+    CTEXT           "Масса",IDC_STATIC,156,114,30,12,SS_CENTERIMAGE
+    CTEXT           "",IDC_ACC_LAB,12,198,75,12,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_A_MIN,91,198,41,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_A_MAX,137,198,40,12,ES_AUTOHSCROLL
+END
+
+IDD_FORMULA_DLG DIALOGEX 0, 0, 112, 82
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Структурная формула"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,55,45,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,55,65,50,14
+    PUSHBUTTON      "Пx",IDC_B_MX,5,25,19,14,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Вx",IDC_B_RX,30,25,19,14,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Пy",IDC_B_MY,5,45,19,14,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Вy",IDC_B_RY,30,45,19,14,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Пz",IDC_B_MZ,5,65,19,14,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Вz",IDC_B_RZ,30,65,19,14,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Удалить",IDC_B_DEL,55,25,50,14
+    EDITTEXT        IDC_FORM_EDIT,5,5,100,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DYN_SPEED_DLG DIALOGEX 0, 0, 332, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Обратная задача кинематики о скоростях"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,252,66,50,14
+    CONTROL         "",IDC_SOL,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,11,15,117,70
+    CONTROL         "",IDC_REPORT,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,14,97,300,75
+    GROUPBOX        "Отчет",IDC_STATIC,6,90,318,84,BS_FLAT
+    GROUPBOX        "Решение",IDC_STATIC,6,6,128,80,BS_FLAT
+    GROUPBOX        "Содержание отчета",IDC_STATIC,144,12,155,45,BS_FLAT
+    COMBOBOX        IDC_INSYST,192,39,103,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SYST,192,23,103,75,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Система",IDC_STATIC,151,24,29,10,SS_CENTERIMAGE
+    PUSHBUTTON      "Редактировать звенья",IDC_EDIT_LINKS,144,66,84,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SEL_LINK_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_EDIT_LINK_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 234
+    END
+
+    IDD_FORMULA_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 105
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_DYN_SPEED_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 325
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_CONSTRUCT           BITMAP                  "res\\construct.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_MAST_MORE
+    BUTTON      ID_MAST_LESS
+    BUTTON      ID_VIEW_CENTER
+    SEPARATOR
+    BUTTON      ID_ANLS_AXIS
+    BUTTON      ID_ANLS_PARAMS
+    BUTTON      ID_ANLS_MATRICES
+    BUTTON      ID_ANLS_DER_MATRICES
+    SEPARATOR
+    BUTTON      ID_ANLS_KIN_DIR
+    BUTTON      ID_ANLS_KIN_REV
+    SEPARATOR
+    BUTTON      ID_ANLS_MATR_INERT
+    BUTTON      ID_ANLS_ENERGY
+    BUTTON      ID_ANLS_DYN_REV
+    SEPARATOR
+    BUTTON      ID_ANLS_TRAJECTORY
+END
+
+IDR_CONSTRUCT TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_EDIT_ADD
+    BUTTON      ID_EDIT_DEL
+    BUTTON      ID_EDIT_PROPS
+    SEPARATOR
+    BUTTON      ID_EDIT_PREV
+    BUTTON      ID_EDIT_NEXT
+    SEPARATOR
+    BUTTON      ID_EDIT_FORMULA
+    SEPARATOR
+    BUTTON      ID_CTRL_BACK
+    BUTTON      ID_CTRL_FORV
+    BUTTON      ID_CTRL_MOVE_DEFAULT
+    SEPARATOR
+    BUTTON      ID_CTRL_DO_TRAJ
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&Файл"
+    BEGIN
+        MENUITEM "&Новый\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "&Открыть...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "&Сохранить\tCtrl+S",          ID_FILE_SAVE
+        MENUITEM "Сохранить &как...",           ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "Выход\tAlt+F4",               ID_APP_EXIT
+    END
+    POPUP "&Конструирование"
+    BEGIN
+        MENUITEM "Добавить\tCtrl+A",            ID_EDIT_ADD
+        MENUITEM "Удалить\tDelete",             ID_EDIT_DEL
+        MENUITEM "Свойства\tSpace",             ID_EDIT_PROPS
+        MENUITEM SEPARATOR
+        MENUITEM "Выбрать из списка\tCtrl+Q",   ID_EDIT_SELECT
+        MENUITEM "Предыдущее звено\tLeft",      ID_EDIT_PREV
+        MENUITEM "Следующее звено\tRight",      ID_EDIT_NEXT
+        MENUITEM SEPARATOR
+        MENUITEM "Задать по формуле\tCtrl+F",   ID_EDIT_FORMULA
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About robot...",             ID_APP_ABOUT
+    END
+    POPUP "&Вид"
+    BEGIN
+        POPUP "Режимы отображения"
+        BEGIN
+            MENUITEM "Чертежный",                   ID_VIEW_MODES_2D
+            MENUITEM "Изометрия",                   ID_VIEW_MODES_3D
+        END
+        POPUP "Масштаб"
+        BEGIN
+            MENUITEM "Уменьшить\tCtrl+Shift+GrayPlus", ID_MAST_LESS
+            MENUITEM "Увеличить\tCtrl+Shift+GrayMinus", ID_MAST_MORE
+            MENUITEM "Нормальный",                  ID_MAST_NORM
+        END
+        MENUITEM "Центровка изображения",       ID_VIEW_CENTER
+        MENUITEM "Перерисовать экран\tCtrl+1",  ID_VIEW_REFRESH
+        MENUITEM SEPARATOR
+        MENUITEM "&Панель инструментов",        ID_VIEW_TOOLBAR
+        MENUITEM "&Панель статуса",             ID_VIEW_STATUS_BAR
+    END
+    POPUP "Анализ"
+    BEGIN
+        MENUITEM "Отображать системы координат\tF2", ID_ANLS_AXIS
+        MENUITEM SEPARATOR
+        MENUITEM "Таблица параметров\tF3",      ID_ANLS_PARAMS
+        MENUITEM "Матрицы перехода\tF4",        ID_ANLS_MATRICES
+        MENUITEM "Производные матриц\tF5",      ID_ANLS_DER_MATRICES
+        MENUITEM SEPARATOR
+        MENUITEM "Прямая задача кинематики\tF6", ID_ANLS_KIN_DIR
+        MENUITEM "Обратная задача кинематики\tF7", ID_ANLS_KIN_REV
+        MENUITEM SEPARATOR
+        MENUITEM "Матрицы инерции\tF8",         ID_ANLS_MATR_INERT
+        MENUITEM "Энергии звеньев\tF9",         ID_ANLS_ENERGY
+        MENUITEM "Обратная задача динамики\tF10", ID_ANLS_DYN_REV
+        MENUITEM SEPARATOR
+        MENUITEM "Построение траектории\tF11",  ID_ANLS_TRAJECTORY
+        MENUITEM SEPARATOR
+        MENUITEM "Насторйки...\tF12",           ID_ANLS_OPTIONS
+    END
+    POPUP "Управление"
+    BEGIN
+        MENUITEM "Исходное положение\tHome",    ID_CTRL_MOVE_DEFAULT
+        MENUITEM "Движение вперед\tUp",         ID_CTRL_FORV
+        MENUITEM "Движение назад\tDown",        ID_CTRL_BACK
+        MENUITEM SEPARATOR
+        MENUITEM "Отработка траектории\tCtrl+T", ID_CTRL_DO_TRAJ
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    VK_F2,          ID_ANLS_AXIS,           VIRTKEY, NOINVERT
+    VK_F5,          ID_ANLS_DER_MATRICES,   VIRTKEY, NOINVERT
+    VK_F10,         ID_ANLS_DYN_REV,        VIRTKEY, NOINVERT
+    VK_F6,          ID_ANLS_KIN_DIR,        VIRTKEY, NOINVERT
+    VK_F7,          ID_ANLS_KIN_REV,        VIRTKEY, NOINVERT
+    VK_F8,          ID_ANLS_MATR_INERT,     VIRTKEY, NOINVERT
+    VK_F4,          ID_ANLS_MATRICES,       VIRTKEY, NOINVERT
+    VK_F12,         ID_ANLS_OPTIONS,        VIRTKEY, NOINVERT
+    VK_F3,          ID_ANLS_PARAMS,         VIRTKEY, NOINVERT
+    VK_F11,         ID_ANLS_TRAJECTORY,     VIRTKEY, NOINVERT
+    VK_DOWN,        ID_CTRL_BACK,           VIRTKEY, NOINVERT
+    "T",            ID_CTRL_DO_TRAJ,        VIRTKEY, CONTROL, NOINVERT
+    VK_UP,          ID_CTRL_FORV,           VIRTKEY, NOINVERT
+    VK_HOME,        ID_CTRL_MOVE_DEFAULT,   VIRTKEY, NOINVERT
+    "A",            ID_EDIT_ADD,            VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_DEL,            VIRTKEY, NOINVERT
+    "F",            ID_EDIT_FORMULA,        VIRTKEY, CONTROL, NOINVERT
+    VK_RIGHT,       ID_EDIT_NEXT,           VIRTKEY, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_LEFT,        ID_EDIT_PREV,           VIRTKEY, NOINVERT
+    VK_SPACE,       ID_EDIT_PROPS,          VIRTKEY, NOINVERT
+    "Q",            ID_EDIT_SELECT,         VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_SUBTRACT,    ID_MAST_LESS,           VIRTKEY, CONTROL, ALT, NOINVERT
+    VK_ADD,         ID_MAST_MORE,           VIRTKEY, CONTROL, ALT, NOINVERT
+    "1",            ID_VIEW_REFRESH,        VIRTKEY, CONTROL, NOINVERT
+    VK_F9,          ID_ANLS_ENERGY,         VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "robot MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "robot"
+            VALUE "LegalCopyright", "Copyright (C) 2003"
+            VALUE "OriginalFilename", "robot.EXE"
+            VALUE "ProductName", "robot Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "САПР ""Робот""\n\nunnamed\nRobot Structural Schemes (*.rss)\n.rss\nRobot.Document\nRobot Structural Scheme Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Система Автоматизированного Проектитрования ""Робот"""
+    AFX_IDS_IDLEMESSAGE     "Для получения справки нажмите F1"
+    AFX_IDS_HELPMODEMESSAGE "Выберите объект, на который вы желаете получить справку"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Создает новую структурную схему робота\nНовый документ"
+    ID_FILE_OPEN            "Открывает существующий документ\nOpen"
+    ID_FILE_CLOSE           "Закрывает документ\nClose"
+    ID_FILE_SAVE            "Сохраняет документ\nSave"
+    ID_FILE_SAVE_AS         "Сохраняет документ с новым имененм\nSave As"
+    ID_FILE_PAGE_SETUP      "Изменяет установки печати\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Изменяет установки принтера и печати\nPrint Setup"
+    ID_FILE_PRINT           "Выдает документ на печать\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Позволяет просмотреть документ перед печатью\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Выход из программы\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Открывает этот документ"
+    ID_FILE_MRU_FILE2       "Открывает этот документ"
+    ID_FILE_MRU_FILE3       "Открывает этот документ"
+    ID_FILE_MRU_FILE4       "Открывает этот документ"
+    ID_FILE_MRU_FILE5       "Открывает этот документ"
+    ID_FILE_MRU_FILE6       "Открывает этот документ"
+    ID_FILE_MRU_FILE7       "Открывает этот документ"
+    ID_FILE_MRU_FILE8       "Открывает этот документ"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING1             "Open"
+    IDS_STRING129AFX_IDS_SAVEFILE "Save As"
+    IDS_STRING61442         "All Files (*.*)"
+    AFX_IDS_UNTITLED        "Безымянная схема"
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ADD_LINK             "Добавляет новый элемент в конструкцию"
+    ID_VIEW_MODES_2D        "Переход в режим чертежа"
+    ID_VIEW_MODES_3D        "Переход в режим изометрии"
+    ID_EDIT_DEL             "Удаляет элемент из схемы\nУдалить"
+    ID_EDIT_PROPS           "Устанавливает свойства для выбранного звена\nСвойства"
+    ID_EDIT_ADD             "Добавляет новый элемент в схему\nДобавить"
+END
+
+#endif    // русский resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// украинский resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_UKR)
+#ifdef _WIN32
+LANGUAGE LANG_UKRAINIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PARAMS_DLG DIALOGEX 0, 0, 267, 193
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Параметры манипулятора"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,210,175,50,14
+    CONTROL         "List1",IDC_PARAMS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,10,15,245,80
+    GROUPBOX        "Таблица параметров",IDC_STATIC,5,5,255,95,BS_FLAT
+    GROUPBOX        "Предельные значения",IDC_STATIC,5,100,200,90,BS_FLAT
+    CONTROL         "List2",IDC_VALUES,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,10,110,190,75
+END
+
+IDD_OPT_DLG DIALOGEX 0, 0, 232, 217
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Настройки анализатора"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,126,198,50,15
+    PUSHBUTTON      "Отмена",IDCANCEL,180,198,50,15
+    GROUPBOX        "Таблица параметров",IDC_STATIC,5,5,223,35,BS_FLAT
+    CONTROL         "Использовать численные значения для линейных величин",IDC_OPT_PARS_USE,
+                    "Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,10,15,212,10
+    CONTROL         "Учитывать исходное положение для граничных величин",IDC_OPT_PARS_BORD,
+                    "Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,10,25,212,10
+    GROUPBOX        "Управление",IDC_STATIC,5,45,223,45,BS_FLAT
+    LTEXT           "Шаг поступательного перемещения, мм",IDC_STATIC,10,55,140,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_MOT_STP,155,55,65,12,ES_AUTOHSCROLL
+    LTEXT           "Шаг вращательного перемещения, град",IDC_STATIC,10,70,140,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_ROT_STP,155,70,65,12,ES_AUTOHSCROLL
+    GROUPBOX        "Обратная задача кинематики",IDC_STATIC,6,96,222,60,BS_FLAT
+    LTEXT           "Точность оптимизации",IDC_STATIC,11,106,140,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_KR_PREC,156,106,65,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KR_DIVIDER,156,136,65,12,ES_AUTOHSCROLL
+    LTEXT           "Количество проб на каждую координату",IDC_STATIC,11,136,140,10,SS_CENTERIMAGE
+    CONTROL         "Использовать отбор перед градиентным спуском",IDC_KR_USE_PROBES,
+                    "Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,11,121,210,10
+    GROUPBOX        "Вектор гравитации",IDC_STATIC,6,162,222,30,BS_FLAT
+    CTEXT           "X:",IDC_STATIC,12,174,12,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_GRAV_X,24,174,54,12,ES_AUTOHSCROLL
+    CTEXT           "Y:",IDC_STATIC,84,174,12,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_GRAV_Y,96,174,54,12,ES_AUTOHSCROLL
+    CTEXT           "Z:",IDC_STATIC,156,174,12,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_GRAV_Z,168,174,54,12,ES_AUTOHSCROLL
+END
+
+IDD_MATR_DLG DIALOGEX 0, 0, 490, 228
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Матрицы преобразования обобщенных координат"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,432,210,50,14
+    CONTROL         "List1",IDC_MATR,"SysListView32",LVS_REPORT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,10,10,470,188
+    GROUPBOX        "Матрица",IDC_STATIC,5,0,481,204,BS_FLAT
+    LTEXT           "системы",IDC_STATIC,108,210,36,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_FROM,288,210,100,95,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "в системе",IDC_STATIC,246,210,40,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_TO,144,210,100,95,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MEAN,6,210,100,95,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_KINDIR_DLG DIALOGEX 0, 0, 172, 175
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Положения звеньев"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Система",IDC_STATIC,6,138,36,12,SS_CENTERIMAGE
+    LTEXT           "в системе",IDC_STATIC,6,156,40,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_INSYST,48,156,120,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SYST,48,138,120,75,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_REPORT,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,6,6,162,126,WS_EX_CLIENTEDGE
+END
+
+IDD_FLYEDIT_DLG DIALOGEX 0, 0, 111, 13
+STYLE DS_SETFONT | WS_POPUP | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT,0,0,110,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_CLIENTEDGE
+END
+
+IDD_SELECT_DLG DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Выберите звено из списка"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,55,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,130,75,50,14
+    LISTBOX         IDC_LINK_LIST,5,5,120,85,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_KINREV_DLG DIALOGEX 0, 0, 422, 247
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Решение обратной задачи кинематики"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Исходные уравнения",IDC_STATIC,5,0,250,140,BS_FLAT
+    CONTROL         "List1",IDC_GIVEN,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,10,10,240,105
+    PUSHBUTTON      "Добавить",IDC_ADD,90,120,50,15
+    PUSHBUTTON      "Удалить",IDC_DEL,200,120,50,15
+    PUSHBUTTON      "Изменить",IDC_EDIT,145,120,50,15
+    GROUPBOX        "Параметры оптимизации",IDC_STATIC,260,0,155,140,BS_FLAT
+    PUSHBUTTON      "Предельные значения ...",IDC_LIST_BTN,265,120,145,15
+    CONTROL         "List1",IDC_VARS,"SysListView32",LVS_REPORT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,265,10,145,85
+    PUSHBUTTON      "Взять текущие",IDC_CURR_BTN,265,100,85,15
+    PUSHBUTTON      "Изменить",IDC_EDITVAR,355,100,55,15
+    GROUPBOX        "Целевая функция",IDC_STATIC,140,140,275,30,BS_FLAT
+    EDITTEXT        IDC_FUNC,145,150,265,15,ES_AUTOHSCROLL | ES_READONLY
+    DEFPUSHBUTTON   "Решение",IDC_SOLVE,310,230,50,15
+    PUSHBUTTON      "Отмена",IDCANCEL,365,230,50,14
+    GROUPBOX        "Решение",IDC_STATIC,5,140,130,105,BS_FLAT
+    GROUPBOX        "Прогресс решения",IDC_STATIC,140,175,275,30,BS_FLAT
+    CONTROL         "Progress1",IDC_PRG,"msctls_progress32",WS_BORDER,145,185,265,14
+    CONTROL         "List2",IDC_ANSWER,"SysListView32",LVS_REPORT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,10,150,120,90
+    PUSHBUTTON      "Переместить манипулятор",IDC_MOVE,140,230,105,15
+    LTEXT           "Значение целевой функции",IDC_VALUE,140,215,165,10,SS_CENTERIMAGE
+    PUSHBUTTON      "Прямая задача кинематики",IDC_DIRECT,310,210,105,15
+END
+
+IDD_EDITGIVEN_DLG DIALOGEX 0, 0, 252, 90
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Параметр уравнения"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,140,65,50,15
+    PUSHBUTTON      "Отмена",IDCANCEL,195,65,50,15
+    GROUPBOX        "Параметр",IDC_STATIC,5,0,130,84,BS_FLAT
+    COMBOBOX        IDC_PARAM,12,30,120,175,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "cистемы (a)",IDC_STATIC,12,48,41,12,SS_CENTERIMAGE
+    LTEXT           "в системе (b)",IDC_STATIC,12,66,46,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_SYST,60,48,72,90,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_INSYST,60,66,72,80,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Результирующее значение",IDC_STATIC,140,0,105,30,BS_FLAT
+    EDITTEXT        IDC_VAL,145,10,95,14,ES_AUTOHSCROLL
+    GROUPBOX        "Штрафной коэффициент",IDC_STATIC,140,30,105,30,BS_FLAT
+    EDITTEXT        IDC_PEN,145,40,95,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_TYPE,12,12,120,175,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_EDITVARS_DLG DIALOGEX 0, 0, 132, 82
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Переменная"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,20,65,50,15
+    PUSHBUTTON      "Отмена",IDCANCEL,75,65,50,15
+    GROUPBOX        "Начальное значение",IDC_STATIC,5,0,120,30,BS_FLAT
+    EDITTEXT        IDC_VALUE,10,10,110,15,ES_AUTOHSCROLL
+    GROUPBOX        "Штраф",IDC_STATIC,5,30,120,30,BS_FLAT
+    EDITTEXT        IDC_PEN,10,40,110,15,ES_AUTOHSCROLL
+END
+
+IDD_DERIV_MATR_DLG DIALOGEX 0, 0, 442, 103
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Частные производные матрицы преобразования обобщенных координат "
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,385,80,50,14
+    CONTROL         "List1",IDC_MATR,"SysListView32",LVS_REPORT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,10,10,420,60
+    GROUPBOX        "Матрица U",IDC_STATIC,5,0,430,75,BS_FLAT
+    LTEXT           "Производная системы",IDC_STATIC,12,84,84,9,SS_CENTERIMAGE
+    COMBOBOX        IDC_LINK,102,84,78,54,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "по координате",IDC_STATIC,186,84,54,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COORDINATE,246,84,84,54,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DYNDIR_DLG DIALOGEX 0, 0, 357, 188
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Решение прямой задачи о скоростях"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_GIVEN,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,10,10,175,70
+    PUSHBUTTON      "Принять текущие",IDC_CURRENT,195,5,75,14
+    PUSHBUTTON      "OK",IDOK,295,170,55,14
+    GROUPBOX        "Значения обобщенных скоростей",IDC_STATIC,5,0,185,85,BS_FLAT
+    GROUPBOX        "Отчет",IDC_STATIC,5,85,345,80,BS_FLAT
+    GROUPBOX        "Содержание отчета",IDC_STATIC,195,40,155,45,BS_FLAT
+    LTEXT           "Система",IDC_STATIC,200,50,40,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_SYST,240,50,105,75,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_REPORT,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,10,95,335,65
+    PUSHBUTTON      "Принять исходные",IDC_DEFAULT,275,5,75,14
+    PUSHBUTTON      "Значения обобщенных координат",IDC_COORDINATES,198,24,150,14
+    CTEXT           "В инерциальной системе",IDC_STATIC,204,66,138,12,SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         "Подставить текущие координаты манипулятора в матрицу",IDC_SUBSTATE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,168,216,16
+END
+
+IDD_POS_DLG DIALOGEX 0, 0, 250, 103
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_RTLREADING
+CAPTION "Положение манипулятора"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_POS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_TABSTOP,6,6,144,90,WS_EX_CLIENTEDGE
+    LISTBOX         IDC_STORE,156,6,90,54,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Запомнить",IDC_SAVE,156,66,42,14,BS_FLAT
+    PUSHBUTTON      "Применить",IDC_APPLY,204,66,42,14,BS_FLAT
+    PUSHBUTTON      "Изменить",IDC_RENAME,156,84,42,14,BS_FLAT
+    PUSHBUTTON      "Удалить",IDC_DELETE,204,84,42,14,BS_FLAT
+END
+
+IDD_VALUE_DLG DIALOGEX 0, 0, 124, 41
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Введите значение"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,6,24,48,14
+    PUSHBUTTON      "Cancel",IDCANCEL,72,24,48,14
+    EDITTEXT        IDC_EDIT1,6,6,114,14,ES_AUTOHSCROLL
+END
+
+IDD_EDIT_POS_DLG DIALOGEX 0, 0, 130, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Положение звена"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,6,72,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,78,72,48,14
+    GROUPBOX        "Звено",IDC_STATIC,6,0,120,66
+    EDITTEXT        IDC_POS,60,12,54,12,ES_AUTOHSCROLL
+    LTEXT           "Положение",IDC_STATIC,18,12,42,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_VEL,60,30,54,12,ES_AUTOHSCROLL
+    LTEXT           "Скорость",IDC_STATIC,18,30,42,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_ACC,60,48,54,12,ES_AUTOHSCROLL
+    LTEXT           "Ускорение",IDC_STATIC,18,48,42,12,SS_CENTERIMAGE
+END
+
+IDD_REV_DLG DIALOGEX 0, 0, 418, 210
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Решение обратной задачи кинематики"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,360,192,50,14
+    GROUPBOX        "Условия",IDC_STATIC,6,0,408,132
+    CONTROL         "",IDC_GIVEN,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,12,12,396,96,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Положение",IDC_POSITION,12,114,60,12,BS_FLAT
+    PUSHBUTTON      "Изменить",IDC_EDIT,282,114,60,12,BS_FLAT
+    PUSHBUTTON      "Удалить",IDC_REMOVE,348,114,60,12,BS_FLAT
+    PUSHBUTTON      "Начать",IDC_SOLVE,12,150,60,12,BS_FLAT
+    GROUPBOX        "Решение",IDC_STATIC,6,138,408,48
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH,78,168,330,12
+    CTEXT           "Готово",IDC_INFO,78,150,198,12,SS_CENTERIMAGE | SS_SUNKEN
+    PUSHBUTTON      "Переместить",IDC_MOVE,282,150,60,12,BS_FLAT
+    PUSHBUTTON      "Сохранить",IDC_SAVE,348,150,60,12,BS_FLAT
+    PUSHBUTTON      "Просмотреть",IDC_VIEW,12,168,60,12,BS_FLAT
+END
+
+IDD_WIDE_VIEW DIALOGEX 0, 0, 334, 223
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Целевая функция"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,276,204,54,12,BS_FLAT
+    EDITTEXT        IDC_EDIT,6,6,324,192,ES_MULTILINE | ES_AUTOHSCROLL
+END
+
+IDD_GRAPHS_DLG DIALOGEX 0, 0, 430, 289
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Графики"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,372,270,54,12,BS_FLAT
+    CONTROL         "",IDC_GRAPH,"Static",SS_OWNERDRAW | WS_BORDER,6,6,420,258,WS_EX_CLIENTEDGE
+    CTEXT           "Static",IDC_CAPT,6,270,360,12,SS_CENTERIMAGE | SS_SUNKEN
+END
+
+IDD_TRAJ_DLG DIALOGEX 0, 0, 358, 193
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Планирование траектории"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,294,174,54,12,BS_FLAT
+    CONTROL         "",IDC_POINTS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,12,12,168,114,WS_EX_CLIENTEDGE
+    GROUPBOX        "Положения манипулятора в статической СК",IDC_STATIC,6,0,240,132
+    PUSHBUTTON      "Добавить",ID_ADD,186,12,54,12,BS_FLAT
+    PUSHBUTTON      "Изменить",ID_EDIT,186,30,54,12,BS_FLAT
+    PUSHBUTTON      "Удалить",ID_REMOVE,186,48,54,12,BS_FLAT
+    CONTROL         "",IDC_PROG,"msctls_progress32",PBS_SMOOTH | WS_BORDER,12,150,276,12
+    GROUPBOX        "Рассчет",IDC_STATIC,6,138,348,30
+    PUSHBUTTON      "Начать",ID_START,294,150,54,12,BS_FLAT
+    GROUPBOX        "Просмотр графиков",IDC_STATIC,252,0,102,132
+    LISTBOX         IDC_VARS,258,12,90,96,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Просмотреть",ID_VIEW,294,114,54,12,BS_FLAT
+END
+
+IDD_EDIT_TRAJ_DLG DIALOGEX 0, 0, 118, 108
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Точка траектории"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,6,90,48,12,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,66,90,48,12,BS_FLAT
+    EDITTEXT        IDC_TIME,60,12,48,12,ES_AUTOHSCROLL
+    CTEXT           "Время",IDC_STATIC,12,12,42,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_X,60,30,48,12,ES_AUTOHSCROLL
+    CTEXT           "X",IDC_STATIC,12,30,42,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_Y,60,48,48,12,ES_AUTOHSCROLL
+    CTEXT           "Y",IDC_STATIC,12,48,42,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_Z,60,66,48,12,ES_AUTOHSCROLL
+    CTEXT           "Z",IDC_STATIC,12,66,42,12,SS_CENTERIMAGE
+    GROUPBOX        "",IDC_STATIC,6,0,108,84
+END
+
+IDD_INERT_MATR_DLG DIALOGEX 0, 0, 442, 97
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Матрицы инерций звеньев манипулятора"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,385,80,50,14
+    CONTROL         "List1",IDC_MATR,"SysListView32",LVS_REPORT | LVS_NOSORTHEADER | WS_TABSTOP,10,10,420,60,WS_EX_CLIENTEDGE
+    GROUPBOX        "Матрица H",-1,5,0,430,75
+    LTEXT           "Матрица инерций системы",-1,12,78,96,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_LINK,114,78,78,54,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DYN_ENERGY DIALOGEX 0, 0, 208, 151
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Энергии звеньев манипулятора"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,156,132,48,12,BS_FLAT
+    CONTROL         "",IDC_POWERS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_TABSTOP,6,6,198,120,WS_EX_CLIENTEDGE
+END
+
+IDD_DYN_REV DIALOGEX 0, 0, 208, 151
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Решение обратной задачи динамики"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,156,132,48,12,BS_FLAT
+    CONTROL         "",IDC_POWERS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_TABSTOP,6,6,198,120,WS_EX_CLIENTEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PARAMS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_OPT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_MATR_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 483
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 221
+    END
+
+    IDD_KINDIR_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_FLYEDIT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 104
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 6
+    END
+
+    IDD_SELECT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_KINREV_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 415
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+
+    IDD_EDITGIVEN_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_EDITVARS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 125
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_DERIV_MATR_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 435
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_DYNDIR_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 350
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_POS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_VALUE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 117
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 34
+    END
+
+    IDD_EDIT_POS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 123
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_REV_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 411
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_WIDE_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 327
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+
+    IDD_GRAPHS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 423
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 282
+    END
+
+    IDD_TRAJ_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 351
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_EDIT_TRAJ_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 111
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_INERT_MATR_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 435
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_DYN_ENERGY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_DYN_REV, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\robot.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ML5                 ICON                    "res\\ml5.ico"
+IDI_RL5                 ICON                    "res\\rl5.ico"
+IDI_GRIPE1              ICON                    "res\\gripe1.ico"
+#endif    // украинский resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// английский (США) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\robot.ico"
+IDR_ROBOTTYPE           ICON                    "res\\robotDoc.ico"
+#endif    // английский (США) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\robot.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
